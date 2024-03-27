@@ -9,8 +9,8 @@ import pandas as pd
 
 # Set the title and favicon that appear in the Browser's tab bar.
 st.set_page_config(
-    page_title='Inventory tracker',
-    page_icon=':shopping_bags:', # This is an emoji shortcode. Could be a URL too.
+    page_title='Stockisha',
+    page_icon=':money_with_wings:', # This is an emoji shortcode. Could be a URL too.
 )
 
 
@@ -168,15 +168,15 @@ def update_data(conn, df, changes):
 
 # Set the title that appears at the top of the page.
 '''
-# :shopping_bags: Inventory tracker
+# :shopping_bags: Stock tracking system
 
-**Welcome to Alice's Corner Store's intentory tracker!**
+**Welcome to Alice's Corner Store's inventory tracker!**
 This page reads and writes directly from/to our inventory database.
 '''
 
 st.info('''
     Use the table below to add, remove, and edit items.
-    And don't forget to commit your changes when you're done.
+    And don't forget to commit/save your changes when you're done.
     ''')
 
 # Connect to database and create table if needed
